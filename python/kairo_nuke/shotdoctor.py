@@ -46,6 +46,9 @@ class ScriptProfile:
             raise ValueError("project first frame must not exceed last frame")
 
 
+# Teaching: all validation happens on immutable NodeSnapshot values.
+# This lets normal Python tests check path, sequence and graph connectivity
+# rules without importing Nuke; the native adapter handles navigation only.
 def validate_script(
     project_root: Path,
     nodes: Iterable[NodeSnapshot],
