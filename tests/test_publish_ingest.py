@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_publish_ingest.py
+# Exercises valid and tampered pipeline bundles, hash mismatches and rejection,
+# independently of Nuke UI.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest

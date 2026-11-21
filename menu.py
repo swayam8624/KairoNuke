@@ -1,3 +1,8 @@
+# TEACHING MAP — menu.py
+# Nuke UI menu creation and operator binding. User actions call nuke_adapter and ShotDoctor
+# APIs; menus should not silently modify the current Nuke script on import.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 """Nuke menu registration for Kairo ShotDoctor."""
 
 import nuke

@@ -1,3 +1,9 @@
+# TEACHING MAP — python/kairo_nuke/shotdoctor.py
+# Portable inspection of Read/Write node expectations, media paths and output
+# configuration. nuke_adapter provides host-specific snapshots; diagnostics are separate
+# from performing a render.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 """Host-neutral Nuke script validation rules."""
 
 from __future__ import annotations

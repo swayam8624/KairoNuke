@@ -1,3 +1,8 @@
+# TEACHING MAP — python/kairo_nuke/__init__.py
+# Package boundary for Nuke-compatible diagnostics and publication ingestion. Native Nuke
+# nodes remain in the host adapter.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 """Kairo Nuke ShotDoctor public API."""
 
 from .shotdoctor import NodeSnapshot, ScriptProfile, validate_script

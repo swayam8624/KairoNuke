@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_nuke_adapter.py
+# Tests host-adapter mapping with faked Nuke APIs. Real UI integration must still be
+# verified inside the application.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 import os
 import unittest
 from unittest.mock import patch
