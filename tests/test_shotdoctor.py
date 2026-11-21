@@ -1,3 +1,8 @@
+# TEACHING MAP — tests/test_shotdoctor.py
+# Tests shot preflight errors and severity using synthetic node/plate fixtures; no real
+# Nuke host render implied.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
