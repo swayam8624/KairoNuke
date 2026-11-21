@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Guarded native nuke module wrapper converts Read/Write nodes to snapshots and navigates diagnostics
+# to node names; pure tests cannot establish licensed Nuke integration.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Guarded adapter between Nuke's Python API and ShotDoctor snapshots."""
 
 from __future__ import annotations
