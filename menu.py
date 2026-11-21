@@ -1,3 +1,4 @@
+# TEACHING MAP: Host entrypoint registers Nuke tools and exposes preflight workflows. Actual image/Read/Write validation belongs to the Python package; importing Nuke host APIs is different from running portable unit tests.
 """Nuke menu registration for Kairo ShotDoctor."""
 
 import nuke
