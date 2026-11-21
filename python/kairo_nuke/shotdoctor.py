@@ -1,3 +1,9 @@
+# SOURCE STUDY NOTE:
+# Pure script validation against ScriptProfile: portable paths, expected frame ranges, colorspace,
+# connectivity and missing sequences. KairoPipelineCore supplies portable diagnostics and sequence
+# checks.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Host-neutral Nuke script validation rules."""
 
 from __future__ import annotations
