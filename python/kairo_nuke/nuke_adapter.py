@@ -27,6 +27,9 @@ def require_nuke() -> Any:
     return _nuke
 
 
+# Teaching: read native Nuke Read/Write/DeepWrite nodes and convert them
+# to plain NodeSnapshot values; shotdoctor.py, not the Nuke GUI, owns the
+# deterministic path/range/colorspace diagnostic rules.
 def inspect_script(project_root: Path | None = None) -> DiagnosticBag:
     """Capture the open script and run the shared deterministic rules."""
 
