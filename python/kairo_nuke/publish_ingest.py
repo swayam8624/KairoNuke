@@ -1,3 +1,8 @@
+# TEACHING MAP — python/kairo_nuke/publish_ingest.py
+# Validates KairoPipelineCore bundle manifests and hashes before importing upstream DCC
+# outputs. A file path or manifest claim alone does not prove provenance.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 """Validate cross-DCC publish manifests before Nuke ingest."""
 
 from __future__ import annotations
