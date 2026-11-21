@@ -1,3 +1,8 @@
+# TEACHING MAP — python/kairo_nuke/nuke_adapter.py
+# Native Nuke Python adapter that maps node graph state and actions into portable
+# ShotDoctor/publish contracts. Requires a host for real node operations.
+# See READING_ORDER.md for API connections and Nuke host boundaries.
+
 """Guarded adapter between Nuke's Python API and ShotDoctor snapshots."""
 
 from __future__ import annotations
