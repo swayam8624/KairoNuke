@@ -1,3 +1,9 @@
+# SOURCE STUDY NOTE:
+# Pure script validation against ScriptProfile: portable paths, expected frame ranges, colorspace,
+# connectivity and missing sequences. KairoPipelineCore supplies portable diagnostics and sequence
+# checks.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Host-neutral Nuke script validation rules."""
 
 from __future__ import annotations
@@ -40,6 +46,9 @@ class ScriptProfile:
             raise ValueError("project first frame must not exceed last frame")
 
 
+# Teaching: all validation happens on immutable NodeSnapshot values.
+# This lets normal Python tests check path, sequence and graph connectivity
+# rules without importing Nuke; the native adapter handles navigation only.
 def validate_script(
     project_root: Path,
     nodes: Iterable[NodeSnapshot],

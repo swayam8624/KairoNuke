@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Nuke UI menu actions for ShotDoctor; nuke_adapter reads native nodes while shotdoctor.py performs
+# host-independent validation.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Nuke menu registration for Kairo ShotDoctor."""
 
 import nuke

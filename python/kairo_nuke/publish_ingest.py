@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Strict downstream intake of CACHE/RENDER publish manifests and SHA-256 files from Houdini/other
+# tools; inspect-only, never rewrites render frames.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Validate cross-DCC publish manifests before Nuke ingest."""
 
 from __future__ import annotations
@@ -15,6 +20,9 @@ from kairo_pipeline.manifest import PublishKind, PublishManifest, load_manifest
 from kairo_pipeline.paths import resolve_project_path
 
 
+# Teaching: ingest is strictly a verification step: load a versioned
+# CACHE/RENDER manifest and re-hash declared files. A valid manifest cannot
+# substitute for a finished render and does not authorize overwriting frames.
 def inspect_publish(project_root: Path, manifest_path: Path) -> tuple[PublishManifest, DiagnosticBag]:
     """Load a strict manifest and verify every declared output fingerprint."""
 

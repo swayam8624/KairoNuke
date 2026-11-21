@@ -1,5 +1,7 @@
 # Kairo Nuke ShotDoctor
 
+> **Learn from source:** [Source teaching guide](docs/SOURCE_READING_ORDER.md) follows Nuke menu/host adapters, Read/Write node snapshots, ShotDoctor rules, and cross-DCC manifest/hash verification without conflating Python tests with licensed Nuke execution. Existing project [LICENSE](LICENSE) is preserved; third-party DCC packages and assets retain their own terms.
+
 ShotDoctor is an artist-facing Nuke preflight tool for Read/Write nodes. It
 finds missing plates, unsafe machine-specific paths, range mismatches,
 disconnected nodes, colorspace omissions, and accidental output overwrites.

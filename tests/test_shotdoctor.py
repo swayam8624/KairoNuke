@@ -1,3 +1,7 @@
+# SOURCE STUDY NOTE:
+# Host-neutral deterministic node snapshots and error diagnostics; no live Nuke graph required.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest

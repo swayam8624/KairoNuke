@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Host adapter checks and guarded missing-host handling; native licensed Nuke runtime is a separate
+# verification gate.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 import os
 import unittest
 from unittest.mock import patch

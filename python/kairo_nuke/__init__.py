@@ -1,3 +1,7 @@
+# SOURCE STUDY NOTE:
+# Public Nuke Python package exports for host adapter, ShotDoctor rules and published-manifest ingest.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Kairo Nuke ShotDoctor public API."""
 
 from .shotdoctor import NodeSnapshot, ScriptProfile, validate_script

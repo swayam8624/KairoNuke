@@ -1,3 +1,7 @@
+# SOURCE STUDY NOTE:
+# Cross-DCC manifest input validation, hash mismatch and unsupported publish kind tests.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest

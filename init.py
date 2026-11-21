@@ -1,3 +1,8 @@
+# SOURCE STUDY NOTE:
+# Nuke startup registration/paths for the ShotDoctor plugin; actual pure inspection logic is under
+# python/kairo_nuke, not this entrypoint.
+# Read docs/SOURCE_READING_ORDER.md for Nuke → snapshots → diagnostics.
+
 """Nuke startup path for Kairo ShotDoctor."""
 
 from pathlib import Path
