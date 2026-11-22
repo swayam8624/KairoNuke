@@ -1,3 +1,12 @@
+# TEACHING MODULE: This is a *consumer-side* trust boundary.
+# It reads a KairoPipelineCore publish manifest, requires a supported
+# cache/render kind, normalizes every path beneath the project root
+# and rehashes declared output/dependency files. A producer-side
+# "publish succeeded" message is not proof of unchanged consumer bytes.
+#
+# The result is typed diagnostic evidence for a Nuke ingest command;
+# it does not create Nuke Read nodes, convert colorspaces or authorize
+# redistribution of third-party source images.
 """Validate cross-DCC publish manifests before Nuke ingest."""
 
 from __future__ import annotations
@@ -15,6 +24,9 @@ from kairo_pipeline.manifest import PublishKind, PublishManifest, load_manifest
 from kairo_pipeline.paths import resolve_project_path
 
 
+# Load a strict manifest and revalidate every declared file on the
+# *consumer's* filesystem. Catch missing/modified outputs before Nuke
+# scripts use them; the native adapter decides how to surface errors.
 def inspect_publish(project_root: Path, manifest_path: Path) -> tuple[PublishManifest, DiagnosticBag]:
     """Load a strict manifest and verify every declared output fingerprint."""
 
