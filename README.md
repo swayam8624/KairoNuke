@@ -1,5 +1,7 @@
 # Kairo Nuke ShotDoctor
 
+**Study the implementation:** [linked file-reading order](docs/SOURCE_READING_ORDER.md) · [Nuke ShotDoctor and independently verified ingest](https://github.com/swayam8624/KairoPipelineCore/blob/docs/teaching-walkthrough-20261121/docs/CROSS_DCC_PUBLICATION_WALKTHROUGH.md).
+
 ShotDoctor is an artist-facing Nuke preflight tool for Read/Write nodes. It
 finds missing plates, unsafe machine-specific paths, range mismatches,
 disconnected nodes, colorspace omissions, and accidental output overwrites.
