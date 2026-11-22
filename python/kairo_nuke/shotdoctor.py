@@ -1,3 +1,13 @@
+# TEACHING MODULE: Detached NodeSnapshot records represent native
+# Nuke Read/Write nodes, frame ranges, paths, colorspaces and enable state.
+# ShotDoctor validates these without launching the Nuke application.
+# FramePattern/scan_sequence from KairoPipelineCore identify missing
+# render/input frames and path containment issues.
+#
+# Validation only assesses declared script/sequence policy. It does
+# not prove a node rendered, a shot is color-managed correctly end to
+# end, or a downstream manifest's bytes were independently verified.
+# Native Nuke snapshots live in nuke_adapter.py.
 """Host-neutral Nuke script validation rules."""
 
 from __future__ import annotations
@@ -40,6 +50,8 @@ class ScriptProfile:
             raise ValueError("project first frame must not exceed last frame")
 
 
+# Review declared Read/Write inputs and output ranges using the
+# host-neutral profile; return typed diagnostics with node provenance.
 def validate_script(
     project_root: Path,
     nodes: Iterable[NodeSnapshot],
