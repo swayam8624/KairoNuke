@@ -1,4 +1,5 @@
 # Teaching source map — KairoNuke
+**Worked source walkthrough:** [Nuke script preflight → published cache/render ingest](https://github.com/swayam8624/KairoPipelineCore/blob/docs/teaching-walkthrough-20261121/docs/CROSS_DCC_PUBLICATION_WALKTHROUGH.md).
 
 Nuke compositing/render-output preflight tools.
 
